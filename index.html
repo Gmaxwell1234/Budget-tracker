@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxwell Budget Tracker (KSH)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="side-menu">
+        <h2>Maxwell's Budget Tracker</h2>
+        <ul>
+            <li class="active" data-page="dashboard">Dashboard</li>
+            <li data-page="add">Add Transaction</li>
+            <li data-page="transactions">Transactions</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <!-- Dashboard Page -->
+        <div id="dashboard" class="page active">
+            <h1>Dashboard</h1>
+            <div class="balance-box">
+                <h3>Current Balance</h3>
+                <p id="balance">KSH 0.00</p>
+            </div>
+        </div>
+
+        <!-- Add Transaction Page -->
+        <div id="add" class="page">
+            <h1>Add Transaction</h1>
+            <form id="transaction-form">
+                <div class="form-group">
+                    <label>Type:</label>
+                    <select id="type" required>
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Amount (KSH):</label>
+                    <input type="number" id="amount" step="1" required>
+                </div>
+                <div class="form-group">
+                    <label>Description:</label>
+                    <input type="text" id="description" required>
+                </div>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+
+        <!-- Transactions Page -->
+        <div id="transactions" class="page">
+            <h1>Transactions</h1>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search transactions...">
+                <button id="search-btn">Search</button>
+            </div>
+            <div id="transactions-list"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

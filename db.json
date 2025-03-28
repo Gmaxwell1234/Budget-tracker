@@ -1,0 +1,32 @@
+{
+  "transactions": [
+    {
+      "id": "959a",
+      "date": "3/28/2025",
+      "type": "income",
+      "amount": 20000,
+      "description": "forex"
+    },
+    {
+      "id": "8882",
+      "date": "3/28/2025",
+      "type": "expense",
+      "amount": 5000,
+      "description": "gym"
+    },
+    {
+      "id": "f2d2",
+      "date": "28/03/2025",
+      "type": "expense",
+      "amount": 3000,
+      "description": "Girlfriend"
+    },
+    {
+      "id": "d1d7",
+      "date": "28/03/2025",
+      "type": "income",
+      "amount": 4000,
+      "description": "farming"
+    }
+  ]
+}
