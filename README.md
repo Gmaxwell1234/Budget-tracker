@@ -25,30 +25,22 @@ The Personal Budget Tracker is a web application that helps users track their in
 ## Setup Instructions  
 
 ### 1. Clone the Repository  
-```sh
-git clone <your-repository-url>
+git clone <git@github.com:Gmaxwell1234/Budget-tracker.git>
 cd personal-budget-tracker
-```
 
 ### 2. Install JSON Server  
 Ensure you have **Node.js** installed, then install JSON Server:  
-```sh
+
 npm install -g json-server
-```
 
 ### 3. Start the JSON Server  
 Run the following command to start the server:  
-```sh
 json-server --watch db.json --port 3000
-```
+
 The server will be available at:  
 **http://localhost:3000/transactions**  
 
 ### 4. Open the Project  
 Open `index.html` in a browser to start using the app.  
-
-## Future Improvements  
-- Add editing functionality  
-- Implement filters for transactions  
-- Improve UI design  
+ 
 
